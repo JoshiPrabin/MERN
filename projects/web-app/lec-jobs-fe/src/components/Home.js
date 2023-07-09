@@ -4,6 +4,7 @@ import UserSection from "./UserSection";
 import PosTop from "./PosTop";
 import PostBar from "./PostBar";
 import RightBar from "./RightBar";
+import Spinner from "./Spinner";
 
 class Index extends Component {
   render() {
@@ -940,13 +941,7 @@ class Index extends Component {
                             </div>
                           </div>
                         </div>
-                        <div className="process-comm">
-                          <div className="spinner">
-                            <div className="bounce1"></div>
-                            <div className="bounce2"></div>
-                            <div className="bounce3"></div>
-                          </div>
-                        </div>
+                        <Spinner></Spinner>
                       </div>
                     </div>
                   </div>
