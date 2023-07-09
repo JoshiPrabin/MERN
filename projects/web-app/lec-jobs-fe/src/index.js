@@ -5,8 +5,8 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Index from "./components/Home";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App></App>);
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(<App></App>);
 
 const home = ReactDOM.createRoot(document.getElementById("home"));
 home.render(<Index></Index>);

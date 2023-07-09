@@ -31,7 +31,7 @@ class Index extends Component {
                     </a>
                   </li>
                   <li>
-                    <a href="#" title="" className="not-box-openm">
+                    <a href="/#" title="" className="not-box-openm">
                       <span>
                         <img src="./images/icon6.png" alt="" />
                       </span>
@@ -104,7 +104,7 @@ class Index extends Component {
                   </li>
 
                   <li>
-                    <a href="#" title="" className="not-box-open">
+                    <a href="/#" title="" className="not-box-open">
                       <span>
                         <img src="./images/icon7.png" alt="" />
                       </span>
@@ -113,7 +113,7 @@ class Index extends Component {
                     <div className="notification-box noti" id="notification">
                       <div className="nt-title">
                         <h4>Setting</h4>
-                        <a href="#" title="">
+                        <a href="/#" title="">
                           Clear all
                         </a>
                       </div>
@@ -124,7 +124,7 @@ class Index extends Component {
                           </div>
                           <div className="notification-info">
                             <h3>
-                              <a href="#" title="">
+                              <a href="/#" title="">
                                 Jassica William
                               </a>
                               Comment on your post.
@@ -138,7 +138,7 @@ class Index extends Component {
                           </div>
                           <div className="notification-info">
                             <h3>
-                              <a href="#" title="">
+                              <a href="/#" title="">
                                 Jassica William
                               </a>
                               Comment on your post.
@@ -152,7 +152,7 @@ class Index extends Component {
                           </div>
                           <div className="notification-info">
                             <h3>
-                              <a href="#" title="">
+                              <a href="/#" title="">
                                 Jassica William
                               </a>
                               Comment on your post.
@@ -166,7 +166,7 @@ class Index extends Component {
                           </div>
                           <div className="notification-info">
                             <h3>
-                              <a href="#" title="">
+                              <a href="/#" title="">
                                 Jassica William
                               </a>
                               Comment on your post.
@@ -175,7 +175,7 @@ class Index extends Component {
                           </div>
                         </div>
                         <div className="view-all-nots">
-                          <a href="#" title="">
+                          <a href="/#" title="">
                             View All Notification
                           </a>
                         </div>
@@ -203,7 +203,7 @@ class Index extends Component {
                     <li>
                       <div className="fgt-sec">
                         <input type="radio" name="cc" id="c5" />
-                        <label for="c5">
+                        <label htmlFor="c5">
                           <span></span>
                         </label>
                         <small>Online</small>
@@ -212,7 +212,7 @@ class Index extends Component {
                     <li>
                       <div className="fgt-sec">
                         <input type="radio" name="cc" id="c6" />
-                        <label for="c6">
+                        <label htmlFor="c6">
                           <span></span>
                         </label>
                         <small>Offline</small>
@@ -436,25 +436,11 @@ class Index extends Component {
                           <ul>
                             <li>
                               <a
-                                className="post_project"
-                                href="./index.html#"
-                                title=""
-                              >
-                                Post a Project
-                              </a>
-                            </li>
-                            <li>
-                              <a
                                 className="post-jb active"
                                 href="./index.html#"
                                 title=""
                               >
                                 Post a Job
-                              </a>
-                            </li>
-                            <li>
-                              <a className="test active" href="#" title="">
-                                Test
                               </a>
                             </li>
                           </ul>
@@ -615,13 +601,13 @@ class Index extends Component {
                           <div className="profiles-slider slick-initialized slick-slider">
                             <span
                               className="slick-previous slick-arrow"
-                              style={{ display: "inline" }}
+                              style={{ display: " inline" }}
                             ></span>
                             <div className="slick-list draggable">
                               <div
                                 className="slick-track"
                                 style={{
-                                  opacity: "1",
+                                  opacity: 1,
                                   width: "2415px",
                                   transform: "translate3d(-805px, 0px, 0px)",
                                   transition: "transform 500ms ease 0s",
@@ -632,7 +618,7 @@ class Index extends Component {
                                   data-slick-index="-3"
                                   aria-hidden="true"
                                   style={{ width: "153px" }}
-                                  tabindex="-1"
+                                  tabIndex="-1"
                                 >
                                   <img src="./images/user1.png" alt="" />
                                   <h3>Saroj Shakya</h3>
@@ -643,7 +629,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="followw"
-                                        tabindex="-1"
+                                        tabIndex="-1"
                                       >
                                         Follow
                                       </a>
@@ -653,7 +639,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="envlp"
-                                        tabindex="-1"
+                                        tabIndex="-1"
                                       >
                                         <img
                                           src="./images/envelop.png"
@@ -666,7 +652,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="hire"
-                                        tabindex="-1"
+                                        tabIndex="-1"
                                       >
                                         hire
                                       </a>
@@ -675,7 +661,7 @@ class Index extends Component {
                                   <a
                                     href="./index.html#"
                                     title=""
-                                    tabindex="-1"
+                                    tabIndex="-1"
                                   >
                                     View Profile
                                   </a>
@@ -685,7 +671,7 @@ class Index extends Component {
                                   data-slick-index="-2"
                                   aria-hidden="true"
                                   style={{ width: "153px" }}
-                                  tabindex="-1"
+                                  tabIndex="-1"
                                 >
                                   <img src="./images/user2.png" alt="" />
                                   <h3>Saroj Shakya</h3>
@@ -696,7 +682,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="followw"
-                                        tabindex="-1"
+                                        tabIndex="-1"
                                       >
                                         Follow
                                       </a>
@@ -706,7 +692,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="envlp"
-                                        tabindex="-1"
+                                        tabIndex="-1"
                                       >
                                         <img
                                           src="./images/envelop.png"
@@ -719,7 +705,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="hire"
-                                        tabindex="-1"
+                                        tabIndex="-1"
                                       >
                                         hire
                                       </a>
@@ -728,7 +714,7 @@ class Index extends Component {
                                   <a
                                     href="./index.html#"
                                     title=""
-                                    tabindex="-1"
+                                    tabIndex="-1"
                                   >
                                     View Profile
                                   </a>
@@ -738,7 +724,7 @@ class Index extends Component {
                                   data-slick-index="-1"
                                   aria-hidden="true"
                                   style={{ width: "153px" }}
-                                  tabindex="-1"
+                                  tabIndex="-1"
                                 >
                                   <img src="./images/user3.png" alt="" />
                                   <h3>Saroj Shakya</h3>
@@ -749,7 +735,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="followw"
-                                        tabindex="-1"
+                                        tabIndex="-1"
                                       >
                                         Follow
                                       </a>
@@ -759,7 +745,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="envlp"
-                                        tabindex="-1"
+                                        tabIndex="-1"
                                       >
                                         <img
                                           src="./images/envelop.png"
@@ -772,7 +758,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="hire"
-                                        tabindex="-1"
+                                        tabIndex="-1"
                                       >
                                         hire
                                       </a>
@@ -781,7 +767,7 @@ class Index extends Component {
                                   <a
                                     href="./index.html#"
                                     title=""
-                                    tabindex="-1"
+                                    tabIndex="-1"
                                   >
                                     View Profile
                                   </a>
@@ -791,7 +777,7 @@ class Index extends Component {
                                   data-slick-index="0"
                                   aria-hidden="true"
                                   style={{ width: "153px" }}
-                                  tabindex="-1"
+                                  tabIndex="-1"
                                 >
                                   <img src="./images/user1.png" alt="" />
                                   <h3>Saroj Shakya</h3>
@@ -802,7 +788,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="followw"
-                                        tabindex="-1"
+                                        tabIndex="-1"
                                       >
                                         Follow
                                       </a>
@@ -812,7 +798,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="envlp"
-                                        tabindex="-1"
+                                        tabIndex="-1"
                                       >
                                         <img
                                           src="./images/envelop.png"
@@ -825,7 +811,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="hire"
-                                        tabindex="-1"
+                                        tabIndex="-1"
                                       >
                                         hire
                                       </a>
@@ -834,7 +820,7 @@ class Index extends Component {
                                   <a
                                     href="./index.html#"
                                     title=""
-                                    tabindex="-1"
+                                    tabIndex="-1"
                                   >
                                     View Profile
                                   </a>
@@ -844,7 +830,7 @@ class Index extends Component {
                                   data-slick-index="1"
                                   aria-hidden="true"
                                   style={{ width: "153px" }}
-                                  tabindex="0"
+                                  tabIndex="0"
                                 >
                                   <img src="./images/user2.png" alt="" />
                                   <h3>Saroj Shakya</h3>
@@ -855,7 +841,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="followw"
-                                        tabindex="0"
+                                        tabIndex="0"
                                       >
                                         Follow
                                       </a>
@@ -865,7 +851,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="envlp"
-                                        tabindex="0"
+                                        tabIndex="0"
                                       >
                                         <img
                                           src="./images/envelop.png"
@@ -878,13 +864,13 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="hire"
-                                        tabindex="0"
+                                        tabIndex="0"
                                       >
                                         hire
                                       </a>
                                     </li>
                                   </ul>
-                                  <a href="./index.html#" title="" tabindex="0">
+                                  <a href="./index.html#" title="" tabIndex="0">
                                     View Profile
                                   </a>
                                 </div>
@@ -893,7 +879,7 @@ class Index extends Component {
                                   data-slick-index="2"
                                   aria-hidden="false"
                                   style={{ width: "153px" }}
-                                  tabindex="0"
+                                  tabIndex="0"
                                 >
                                   <img src="./images/user3.png" alt="" />
                                   <h3>Saroj Shakya</h3>
@@ -904,7 +890,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="followw"
-                                        tabindex="0"
+                                        tabIndex="0"
                                       >
                                         Follow
                                       </a>
@@ -914,7 +900,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="envlp"
-                                        tabindex="0"
+                                        tabIndex="0"
                                       >
                                         <img
                                           src="./images/envelop.png"
@@ -927,13 +913,13 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="hire"
-                                        tabindex="0"
+                                        tabIndex="0"
                                       >
                                         hire
                                       </a>
                                     </li>
                                   </ul>
-                                  <a href="./index.html#" title="" tabindex="0">
+                                  <a href="./index.html#" title="" tabIndex="0">
                                     View Profile
                                   </a>
                                 </div>
@@ -942,7 +928,7 @@ class Index extends Component {
                                   data-slick-index="3"
                                   aria-hidden="false"
                                   style={{ width: "153px" }}
-                                  tabindex="0"
+                                  tabIndex="0"
                                 >
                                   <img src="./images/user1.png" alt="" />
                                   <h3>Saroj Shakya</h3>
@@ -953,7 +939,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="followw"
-                                        tabindex="0"
+                                        tabIndex="0"
                                       >
                                         Follow
                                       </a>
@@ -963,7 +949,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="envlp"
-                                        tabindex="0"
+                                        tabIndex="0"
                                       >
                                         <img
                                           src="./images/envelop.png"
@@ -976,13 +962,13 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="hire"
-                                        tabindex="0"
+                                        tabIndex="0"
                                       >
                                         hire
                                       </a>
                                     </li>
                                   </ul>
-                                  <a href="./index.html#" title="" tabindex="0">
+                                  <a href="./index.html#" title="" tabIndex="0">
                                     View Profile
                                   </a>
                                 </div>
@@ -991,7 +977,7 @@ class Index extends Component {
                                   data-slick-index="4"
                                   aria-hidden="false"
                                   style={{ width: "153px" }}
-                                  tabindex="-1"
+                                  tabIndex="-1"
                                 >
                                   <img src="./images/user2.png" alt="" />
                                   <h3>Saroj Shakya</h3>
@@ -1002,7 +988,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="followw"
-                                        tabindex="-1"
+                                        tabIndex="-1"
                                       >
                                         Follow
                                       </a>
@@ -1012,7 +998,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="envlp"
-                                        tabindex="-1"
+                                        tabIndex="-1"
                                       >
                                         <img
                                           src="./images/envelop.png"
@@ -1025,7 +1011,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="hire"
-                                        tabindex="-1"
+                                        tabIndex="-1"
                                       >
                                         hire
                                       </a>
@@ -1034,7 +1020,7 @@ class Index extends Component {
                                   <a
                                     href="./index.html#"
                                     title=""
-                                    tabindex="-1"
+                                    tabIndex="-1"
                                   >
                                     View Profile
                                   </a>
@@ -1044,7 +1030,7 @@ class Index extends Component {
                                   data-slick-index="5"
                                   aria-hidden="true"
                                   style={{ width: "153px" }}
-                                  tabindex="-1"
+                                  tabIndex="-1"
                                 >
                                   <img src="./images/user3.png" alt="" />
                                   <h3>Saroj Shakya</h3>
@@ -1055,7 +1041,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="followw"
-                                        tabindex="-1"
+                                        tabIndex="-1"
                                       >
                                         Follow
                                       </a>
@@ -1065,7 +1051,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="envlp"
-                                        tabindex="-1"
+                                        tabIndex="-1"
                                       >
                                         <img
                                           src="./images/envelop.png"
@@ -1078,7 +1064,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="hire"
-                                        tabindex="-1"
+                                        tabIndex="-1"
                                       >
                                         hire
                                       </a>
@@ -1087,7 +1073,7 @@ class Index extends Component {
                                   <a
                                     href="./index.html#"
                                     title=""
-                                    tabindex="-1"
+                                    tabIndex="-1"
                                   >
                                     View Profile
                                   </a>
@@ -1097,7 +1083,7 @@ class Index extends Component {
                                   data-slick-index="6"
                                   aria-hidden="true"
                                   style={{ width: "153px" }}
-                                  tabindex="-1"
+                                  tabIndex="-1"
                                 >
                                   <img src="./images/user1.png" alt="" />
                                   <h3>Saroj Shakya</h3>
@@ -1108,7 +1094,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="followw"
-                                        tabindex="-1"
+                                        tabIndex="-1"
                                       >
                                         Follow
                                       </a>
@@ -1118,7 +1104,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="envlp"
-                                        tabindex="-1"
+                                        tabIndex="-1"
                                       >
                                         <img
                                           src="./images/envelop.png"
@@ -1131,7 +1117,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="hire"
-                                        tabindex="-1"
+                                        tabIndex="-1"
                                       >
                                         hire
                                       </a>
@@ -1140,7 +1126,7 @@ class Index extends Component {
                                   <a
                                     href="./index.html#"
                                     title=""
-                                    tabindex="-1"
+                                    tabIndex="-1"
                                   >
                                     View Profile
                                   </a>
@@ -1150,7 +1136,7 @@ class Index extends Component {
                                   data-slick-index="7"
                                   aria-hidden="true"
                                   style={{ width: "153px" }}
-                                  tabindex="-1"
+                                  tabIndex="-1"
                                 >
                                   <img src="./images/user2.png" alt="" />
                                   <h3>Saroj Shakya</h3>
@@ -1161,7 +1147,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="followw"
-                                        tabindex="-1"
+                                        tabIndex="-1"
                                       >
                                         Follow
                                       </a>
@@ -1171,7 +1157,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="envlp"
-                                        tabindex="-1"
+                                        tabIndex="-1"
                                       >
                                         <img
                                           src="./images/envelop.png"
@@ -1184,7 +1170,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="hire"
-                                        tabindex="-1"
+                                        tabIndex="-1"
                                       >
                                         hire
                                       </a>
@@ -1193,7 +1179,7 @@ class Index extends Component {
                                   <a
                                     href="./index.html#"
                                     title=""
-                                    tabindex="-1"
+                                    tabIndex="-1"
                                   >
                                     View Profile
                                   </a>
@@ -1203,7 +1189,7 @@ class Index extends Component {
                                   data-slick-index="8"
                                   aria-hidden="true"
                                   style={{ width: "153px" }}
-                                  tabindex="-1"
+                                  tabIndex="-1"
                                 >
                                   <img src="./images/user3.png" alt="" />
                                   <h3>Saroj Shakya</h3>
@@ -1214,7 +1200,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="followw"
-                                        tabindex="-1"
+                                        tabIndex="-1"
                                       >
                                         Follow
                                       </a>
@@ -1224,7 +1210,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="envlp"
-                                        tabindex="-1"
+                                        tabIndex="-1"
                                       >
                                         <img
                                           src="./images/envelop.png"
@@ -1237,7 +1223,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="hire"
-                                        tabindex="-1"
+                                        tabIndex="-1"
                                       >
                                         hire
                                       </a>
@@ -1246,7 +1232,7 @@ class Index extends Component {
                                   <a
                                     href="./index.html#"
                                     title=""
-                                    tabindex="-1"
+                                    tabIndex="-1"
                                   >
                                     View Profile
                                   </a>
@@ -1256,7 +1242,7 @@ class Index extends Component {
                                   data-slick-index="9"
                                   aria-hidden="true"
                                   style={{ width: "153px" }}
-                                  tabindex="-1"
+                                  tabIndex="-1"
                                 >
                                   <img src="./images/user1.png" alt="" />
                                   <h3>Saroj Shakya</h3>
@@ -1267,7 +1253,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="followw"
-                                        tabindex="-1"
+                                        tabIndex="-1"
                                       >
                                         Follow
                                       </a>
@@ -1277,7 +1263,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="envlp"
-                                        tabindex="-1"
+                                        tabIndex="-1"
                                       >
                                         <img
                                           src="./images/envelop.png"
@@ -1290,7 +1276,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="hire"
-                                        tabindex="-1"
+                                        tabIndex="-1"
                                       >
                                         hire
                                       </a>
@@ -1299,7 +1285,7 @@ class Index extends Component {
                                   <a
                                     href="./index.html#"
                                     title=""
-                                    tabindex="-1"
+                                    tabIndex="-1"
                                   >
                                     View Profile
                                   </a>
@@ -1309,7 +1295,7 @@ class Index extends Component {
                                   data-slick-index="10"
                                   aria-hidden="true"
                                   style={{ width: "153px" }}
-                                  tabindex="-1"
+                                  tabIndex="-1"
                                 >
                                   <img src="./images/user2.png" alt="" />
                                   <h3>Saroj Shakya</h3>
@@ -1320,7 +1306,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="followw"
-                                        tabindex="-1"
+                                        tabIndex="-1"
                                       >
                                         Follow
                                       </a>
@@ -1330,7 +1316,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="envlp"
-                                        tabindex="-1"
+                                        tabIndex="-1"
                                       >
                                         <img
                                           src="./images/envelop.png"
@@ -1343,7 +1329,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="hire"
-                                        tabindex="-1"
+                                        tabIndex="-1"
                                       >
                                         hire
                                       </a>
@@ -1352,7 +1338,7 @@ class Index extends Component {
                                   <a
                                     href="./index.html#"
                                     title=""
-                                    tabindex="-1"
+                                    tabIndex="-1"
                                   >
                                     View Profile
                                   </a>
@@ -1362,7 +1348,7 @@ class Index extends Component {
                                   data-slick-index="11"
                                   aria-hidden="true"
                                   style={{ width: "153px" }}
-                                  tabindex="-1"
+                                  tabIndex="-1"
                                 >
                                   <img src="./images/user3.png" alt="" />
                                   <h3>Saroj Shakya</h3>
@@ -1373,7 +1359,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="followw"
-                                        tabindex="-1"
+                                        tabIndex="-1"
                                       >
                                         Follow
                                       </a>
@@ -1383,7 +1369,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="envlp"
-                                        tabindex="-1"
+                                        tabIndex="-1"
                                       >
                                         <img
                                           src="./images/envelop.png"
@@ -1396,7 +1382,7 @@ class Index extends Component {
                                         href="./index.html#"
                                         title=""
                                         className="hire"
-                                        tabindex="-1"
+                                        tabIndex="-1"
                                       >
                                         hire
                                       </a>
@@ -1405,7 +1391,7 @@ class Index extends Component {
                                   <a
                                     href="./index.html#"
                                     title=""
-                                    tabindex="-1"
+                                    tabIndex="-1"
                                   >
                                     View Profile
                                   </a>
@@ -1415,7 +1401,7 @@ class Index extends Component {
 
                             <span
                               className="slick-nexti slick-arrow"
-                              style={{ display: "inline" }}
+                              style={{ display: " inline" }}
                             ></span>
                           </div>
                         </div>
@@ -2253,12 +2239,12 @@ class Index extends Component {
                   id="mCSB_1"
                   className="mCustomScrollBox mCS-dark mCSB_vertical mCSB_inside"
                   style={{ maxHeight: "none" }}
-                  tabindex="0"
+                  tabIndex="0"
                 >
                   <div
                     id="mCSB_1_container"
                     className="mCSB_container"
-                    style={{ position: "relative", top: "0", left: "0" }}
+                    style={{ position: "relative", top: 0, left: 0 }}
                     dir="ltr"
                   >
                     <div className="chat-msg">
@@ -2374,12 +2360,12 @@ class Index extends Component {
                   id="mCSB_2"
                   className="mCustomScrollBox mCS-dark mCSB_vertical mCSB_inside"
                   style={{ maxHeight: "none" }}
-                  tabindex="0"
+                  tabIndex="0"
                 >
                   <div
                     id="mCSB_2_container"
                     className="mCSB_container"
-                    style={{ position: "relative", top: "0", left: "0" }}
+                    style={{ position: "relative", top: 0, left: 0 }}
                     dir="ltr"
                   >
                     <div className="chat-msg">
@@ -2506,7 +2492,6 @@ class Index extends Component {
                     <span>11:39 PM</span>
                   </div>
                 </div>
-                {/* <ConvoList></ConvoList> */}
                 <div className="conv-list">
                   <div className="usrr-pic">
                     <img src="./images/usy3.png" alt="" />
