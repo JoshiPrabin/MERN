@@ -7,7 +7,7 @@ class Login extends Component {
         <div className="signin-popup">
           <div className="signin-pop">
             <div className="row">
-              <div className="col-lg-6">
+              <div className="col-lg-5">
                 <div className="cmp-info">
                   <div className="cm-logo">
                     <img
@@ -24,7 +24,7 @@ class Login extends Component {
                   <img src="images/lec-full.png" alt="" />
                 </div>
               </div>
-              <div className="col-lg-6">
+              <div className="col-lg-7">
                 <div className="login-sec">
                   <ul className="sign-control">
                     <li data-tab="tab-1" className="current">
@@ -40,9 +40,9 @@ class Login extends Component {
                   </ul>
                   <div className="sign_in_sec current" id="tab-1">
                     <h3>Sign in</h3>
-                    <form id="loginform">
+                    <form id="login-form">
                       <div className="row">
-                        <div className="col-lg-12 no-pdd">
+                        <div className="col-lg-6">
                           <div className="sn-field">
                             <input
                               type="text"
@@ -53,7 +53,7 @@ class Login extends Component {
                             <i className="la la-user"></i>
                           </div>
                         </div>
-                        <div className="col-lg-12 no-pdd">
+                        <div className="col-lg-6">
                           <div className="sn-field">
                             <input
                               type="password"
@@ -64,18 +64,18 @@ class Login extends Component {
                             <i className="la la-lock"></i>
                           </div>
                         </div>
-                        <div className="col-lg-12 no-pdd">
+                        <div className="col-lg-12">
                           <div className="checky-sec">
                             <div className="fgt-sec">
                               <input type="checkbox" name="cc" id="c1" />
-                              <label for="c1">
+                              <label htmlFor="c1">
                                 <span></span>
                               </label>
                               <small>Remember me</small>
                             </div>
                           </div>
                         </div>
-                        <div className="col-lg-12 no-pdd">
+                        <div className="col-lg-12">
                           <button type="submit" value="submit">
                             Sign in
                           </button>
@@ -84,20 +84,21 @@ class Login extends Component {
                     </form>
                   </div>
                   <div className="sign_in_sec" id="tab-2">
-                    <form id="signupform">
+                    <h3>Sign up</h3>
+                    <form id="signup-form">
                       <div className="row">
-                        <div className="col-lg-12 no-pdd">
+                        <div className="col-lg-6">
                           <div className="sn-field">
                             <input
                               type="text"
                               name="username"
-                              id="username"
+                              id="signin-username"
                               placeholder="Username"
                             />
                             <i className="la la-user"></i>
                           </div>
                         </div>
-                        <div className="col-lg-12 no-pdd">
+                        <div className="col-lg-6">
                           <div className="sn-field">
                             <input
                               type="text"
@@ -108,7 +109,7 @@ class Login extends Component {
                             <i className="la la-envelope"></i>
                           </div>
                         </div>
-                        <div className="col-lg-12 no-pdd">
+                        <div className="col-lg-6">
                           <div className="sn-field">
                             <input
                               type="text"
@@ -119,18 +120,7 @@ class Login extends Component {
                             <i className="la la-user"></i>
                           </div>
                         </div>
-                        <div className="col-lg-12 no-pdd">
-                          <div className="sn-field">
-                            <input
-                              type="text"
-                              name="address"
-                              id="address"
-                              placeholder="Address"
-                            />
-                            <i className="la la-globe"></i>
-                          </div>
-                        </div>
-                        <div className="col-lg-12 no-pdd">
+                        <div className="col-lg-6">
                           <div className="sn-field">
                             <input
                               type="text"
@@ -141,18 +131,7 @@ class Login extends Component {
                             <i className="la la-user"></i>
                           </div>
                         </div>
-                        <div className="col-lg-12 no-pdd">
-                          <div className="sn-field">
-                            <input
-                              type="text"
-                              name="skills"
-                              id="skills"
-                              placeholder="Skills (comma separated)"
-                            />
-                            <i className="la la-cogs"></i>
-                          </div>
-                        </div>
-                        <div className="col-lg-12 no-pdd">
+                        <div className="col-lg-6">
                           <div className="sn-field">
                             <select name="job_type" id="job_type">
                               <option>Job Type</option>
@@ -165,33 +144,55 @@ class Login extends Component {
                             </span>
                           </div>
                         </div>
-                        <div className="col-lg-12 no-pdd">
+                        <div className="col-lg-6">
+                          <div className="sn-field">
+                            <input
+                              type="text"
+                              name="skills"
+                              id="skills"
+                              placeholder="Skills (comma separated)"
+                            />
+                            <i className="la la-cogs"></i>
+                          </div>
+                        </div>
+                        <div className="col-lg-12">
+                          <div className="sn-field">
+                            <input
+                              type="text"
+                              name="address"
+                              id="address"
+                              placeholder="Address"
+                            />
+                            <i className="la la-globe"></i>
+                          </div>
+                        </div>
+                        <div className="col-lg-6">
                           <div className="sn-field">
                             <input
                               type="password"
                               name="password"
-                              id="password"
+                              id="signin-password"
                               placeholder="Password"
                             />
                             <i className="la la-lock"></i>
                           </div>
                         </div>
-                        <div className="col-lg-12 no-pdd">
+                        <div className="col-lg-6">
                           <div className="sn-field">
                             <input
                               type="password"
                               name="repeat-password"
-                              id="rpassword"
+                              id="repeat-password"
                               placeholder="Repeat Password"
                             />
                             <i className="la la-lock"></i>
                           </div>
                         </div>
-                        <div className="col-lg-12 no-pdd">
+                        <div className="col-lg-12">
                           <div className="checky-sec st2">
                             <div className="fgt-sec">
                               <input type="checkbox" name="cc" id="c2" />
-                              <label for="c2">
+                              <label htmlFor="c2">
                                 <span></span>
                               </label>
                               <small>
@@ -201,7 +202,7 @@ class Login extends Component {
                             </div>
                           </div>
                         </div>
-                        <div className="col-lg-12 no-pdd">
+                        <div className="col-lg-6">
                           <button type="submit" value="submit">
                             Get Started
                           </button>
