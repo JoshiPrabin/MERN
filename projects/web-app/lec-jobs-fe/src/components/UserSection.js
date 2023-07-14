@@ -8,11 +8,11 @@ class UserSection extends Component {
           <div className="user-profile">
             <div className="username-dt">
               <div className="usr-pic">
-                <img src="./images/saroj-pic.jpeg" alt="" />
+                <img src="./images/profile.jpg" alt="" />
               </div>
             </div>
             <div className="user-specs">
-              <h3>Saroj Shakya</h3>
+              <h3>Prabin Joshi</h3>
               <span>Research Head</span>
             </div>
           </div>
@@ -51,7 +51,7 @@ class UserSection extends Component {
             <div className="suggestion-usd">
               <img src="./images/s2.png" alt="" />
               <div className="sgt-text">
-                <h4>Saroj Shakya</h4>
+                <h4>Prabin Joshi</h4>
                 <span>PHP Developer</span>
               </div>
               <span>
@@ -91,7 +91,7 @@ class UserSection extends Component {
             <div className="suggestion-usd">
               <img src="./images/s6.png" alt="" />
               <div className="sgt-text">
-                <h4>Saroj Shakya</h4>
+                <h4>Prabin Joshi</h4>
                 <span>PHP Developer</span>
               </div>
               <span>

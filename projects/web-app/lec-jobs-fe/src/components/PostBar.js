@@ -6,9 +6,9 @@ class PostBar extends Component {
       <div className="post-bar">
         <div className="post_topbar">
           <div className="usy-dt">
-            <img src="./images/saroj-pic.jpeg" alt="" />
+            <img src="./images/profile.jpg" alt="" />
             <div className="usy-name">
-              <h3>Saroj Shakya</h3>
+              <h3>Prabin Joshi</h3>
               <span>3 min ago</span>
             </div>
           </div>

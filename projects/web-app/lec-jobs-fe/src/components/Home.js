@@ -55,7 +55,7 @@ class Index extends Component {
                                   tabIndex="-1"
                                 >
                                   <img src="./images/user1.png" alt="" />
-                                  <h3>Saroj Shakya</h3>
+                                  <h3>Prabin Joshi</h3>
                                   <span>Graphic Designer</span>
                                   <ul>
                                     <li>
@@ -108,7 +108,7 @@ class Index extends Component {
                                   tabIndex="-1"
                                 >
                                   <img src="./images/user2.png" alt="" />
-                                  <h3>Saroj Shakya</h3>
+                                  <h3>Prabin Joshi</h3>
                                   <span>Graphic Designer</span>
                                   <ul>
                                     <li>
@@ -161,7 +161,7 @@ class Index extends Component {
                                   tabIndex="-1"
                                 >
                                   <img src="./images/user3.png" alt="" />
-                                  <h3>Saroj Shakya</h3>
+                                  <h3>Prabin Joshi</h3>
                                   <span>Graphic Designer</span>
                                   <ul>
                                     <li>
@@ -214,7 +214,7 @@ class Index extends Component {
                                   tabIndex="-1"
                                 >
                                   <img src="./images/user1.png" alt="" />
-                                  <h3>Saroj Shakya</h3>
+                                  <h3>Prabin Joshi</h3>
                                   <span>Graphic Designer</span>
                                   <ul>
                                     <li>
@@ -267,7 +267,7 @@ class Index extends Component {
                                   tabIndex="0"
                                 >
                                   <img src="./images/user2.png" alt="" />
-                                  <h3>Saroj Shakya</h3>
+                                  <h3>Prabin Joshi</h3>
                                   <span>Graphic Designer</span>
                                   <ul>
                                     <li>
@@ -316,7 +316,7 @@ class Index extends Component {
                                   tabIndex="0"
                                 >
                                   <img src="./images/user3.png" alt="" />
-                                  <h3>Saroj Shakya</h3>
+                                  <h3>Prabin Joshi</h3>
                                   <span>Graphic Designer</span>
                                   <ul>
                                     <li>
@@ -365,7 +365,7 @@ class Index extends Component {
                                   tabIndex="0"
                                 >
                                   <img src="./images/user1.png" alt="" />
-                                  <h3>Saroj Shakya</h3>
+                                  <h3>Prabin Joshi</h3>
                                   <span>Graphic Designer</span>
                                   <ul>
                                     <li>
@@ -414,7 +414,7 @@ class Index extends Component {
                                   tabIndex="-1"
                                 >
                                   <img src="./images/user2.png" alt="" />
-                                  <h3>Saroj Shakya</h3>
+                                  <h3>Prabin Joshi</h3>
                                   <span>Graphic Designer</span>
                                   <ul>
                                     <li>
@@ -467,7 +467,7 @@ class Index extends Component {
                                   tabIndex="-1"
                                 >
                                   <img src="./images/user3.png" alt="" />
-                                  <h3>Saroj Shakya</h3>
+                                  <h3>Prabin Joshi</h3>
                                   <span>Graphic Designer</span>
                                   <ul>
                                     <li>
@@ -520,7 +520,7 @@ class Index extends Component {
                                   tabIndex="-1"
                                 >
                                   <img src="./images/user1.png" alt="" />
-                                  <h3>Saroj Shakya</h3>
+                                  <h3>Prabin Joshi</h3>
                                   <span>Graphic Designer</span>
                                   <ul>
                                     <li>
@@ -573,7 +573,7 @@ class Index extends Component {
                                   tabIndex="-1"
                                 >
                                   <img src="./images/user2.png" alt="" />
-                                  <h3>Saroj Shakya</h3>
+                                  <h3>Prabin Joshi</h3>
                                   <span>Graphic Designer</span>
                                   <ul>
                                     <li>
@@ -626,7 +626,7 @@ class Index extends Component {
                                   tabIndex="-1"
                                 >
                                   <img src="./images/user3.png" alt="" />
-                                  <h3>Saroj Shakya</h3>
+                                  <h3>Prabin Joshi</h3>
                                   <span>Graphic Designer</span>
                                   <ul>
                                     <li>
@@ -679,7 +679,7 @@ class Index extends Component {
                                   tabIndex="-1"
                                 >
                                   <img src="./images/user1.png" alt="" />
-                                  <h3>Saroj Shakya</h3>
+                                  <h3>Prabin Joshi</h3>
                                   <span>Graphic Designer</span>
                                   <ul>
                                     <li>
@@ -732,7 +732,7 @@ class Index extends Component {
                                   tabIndex="-1"
                                 >
                                   <img src="./images/user2.png" alt="" />
-                                  <h3>Saroj Shakya</h3>
+                                  <h3>Prabin Joshi</h3>
                                   <span>Graphic Designer</span>
                                   <ul>
                                     <li>
@@ -785,7 +785,7 @@ class Index extends Component {
                                   tabIndex="-1"
                                 >
                                   <img src="./images/user3.png" alt="" />
-                                  <h3>Saroj Shakya</h3>
+                                  <h3>Prabin Joshi</h3>
                                   <span>Graphic Designer</span>
                                   <ul>
                                     <li>
@@ -857,7 +857,7 @@ class Index extends Component {
                                       <img src="./images/bg-img1.png" alt="" />
                                     </div>
                                     <div className="comment">
-                                      <h3>Saroj Shakya</h3>
+                                      <h3>Prabin Joshi</h3>
                                       <span>
                                         <img src="./images/clock.png" alt="" />{" "}
                                         3 min ago
@@ -882,7 +882,7 @@ class Index extends Component {
                                           />
                                         </div>
                                         <div className="comment">
-                                          <h3>Saroj Shakya</h3>
+                                          <h3>Prabin Joshi</h3>
                                           <span>
                                             <img
                                               src="./images/clock.png"
@@ -906,7 +906,7 @@ class Index extends Component {
                                       <img src="./images/bg-img3.png" alt="" />
                                     </div>
                                     <div className="comment">
-                                      <h3>Saroj Shakya</h3>
+                                      <h3>Prabin Joshi</h3>
                                       <span>
                                         <img src="./images/clock.png" alt="" />{" "}
                                         3 min ago
@@ -1094,7 +1094,7 @@ class Index extends Component {
                 <div className="chat-user-info">
                   <img src="./images/us-img1.png" alt="" />
                   <h3>
-                    Saroj Shakya <span className="status-info"></span>
+                    Prabin Joshi <span className="status-info"></span>
                   </h3>
                 </div>
                 <div className="st-icons">
@@ -1215,7 +1215,7 @@ class Index extends Component {
                 <div className="chat-user-info">
                   <img src="./images/us-img1.png" alt="" />
                   <h3>
-                    Saroj Shakya <span className="status-info"></span>
+                    Prabin Joshi <span className="status-info"></span>
                   </h3>
                 </div>
                 <div className="st-icons">
@@ -1346,7 +1346,7 @@ class Index extends Component {
                     <span className="active-status activee"></span>
                   </div>
                   <div className="usy-info">
-                    <h3>Saroj Shakya</h3>
+                    <h3>Prabin Joshi</h3>
                     <span>
                       Lorem ipsum dolor <img src="./images/smley.png" alt="" />
                     </span>
@@ -1361,7 +1361,7 @@ class Index extends Component {
                     <img src="./images/usy2.png" alt="" />
                   </div>
                   <div className="usy-info">
-                    <h3>Saroj Shakya</h3>
+                    <h3>Prabin Joshi</h3>
                     <span>
                       Lorem ipsum dolor <img src="./images/smley.png" alt="" />
                     </span>
@@ -1375,7 +1375,7 @@ class Index extends Component {
                     <img src="./images/usy3.png" alt="" />
                   </div>
                   <div className="usy-info">
-                    <h3>Saroj Shakya</h3>
+                    <h3>Prabin Joshi</h3>
                     <span>
                       Lorem ipsum dolor <img src="./images/smley.png" alt="" />
                     </span>
