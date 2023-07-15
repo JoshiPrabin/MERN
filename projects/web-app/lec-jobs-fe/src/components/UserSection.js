@@ -2,28 +2,30 @@ import { Component } from "react";
 
 class UserSection extends Component {
   render() {
+    // const user = this.props.user;
+    const { user } = this.props;
     return (
       <div className="main-left-sidebar no-margin">
         <div className="user-data full-width">
           <div className="user-profile">
             <div className="username-dt">
               <div className="usr-pic">
-                <img src="./images/profile.jpg" alt="" />
+                <img src={"./images/" + user.username + ".jpg"} alt="" />
               </div>
             </div>
             <div className="user-specs">
-              <h3>Prabin Joshi</h3>
-              <span>Research Head</span>
+              <h3>{user.fullname}</h3>
+              <span>{user.title}</span>
             </div>
           </div>
           <ul className="user-fw-status">
             <li>
               <h4>Following</h4>
-              <span>34</span>
+              <span>{user.followings.length}</span>
             </li>
             <li>
               <h4>Followers</h4>
-              <span>155</span>
+              <span>{user.followers.length}</span>
             </li>
             <li>
               <a href="./my-profile.html" title="">
@@ -51,8 +53,8 @@ class UserSection extends Component {
             <div className="suggestion-usd">
               <img src="./images/s2.png" alt="" />
               <div className="sgt-text">
-                <h4>Prabin Joshi</h4>
-                <span>PHP Developer</span>
+                <h4>{user.fullname}</h4>
+                <span>{user.title}</span>
               </div>
               <span>
                 <i className="la la-plus"></i>
@@ -91,7 +93,7 @@ class UserSection extends Component {
             <div className="suggestion-usd">
               <img src="./images/s6.png" alt="" />
               <div className="sgt-text">
-                <h4>Prabin Joshi</h4>
+                <h4>{user.fullname}</h4>
                 <span>PHP Developer</span>
               </div>
               <span>
@@ -152,7 +154,7 @@ class UserSection extends Component {
             <img src="./images/lec-full.png" alt="" />
             <p>
               <img src="./images/cp.png" alt="" />
-              Copyright 2019
+              Copyright 2023
             </p>
           </div>
         </div>

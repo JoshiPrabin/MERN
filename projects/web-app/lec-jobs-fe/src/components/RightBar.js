@@ -2,6 +2,7 @@ import { Component } from "react";
 
 class RightBar extends Component {
   render() {
+    const { user } = this.props;
     return (
       <div className="col-lg-3 pd-right-none no-pd">
         <div className="right-sidebar">
@@ -130,7 +131,7 @@ class RightBar extends Component {
               <img src="./images/lec-full.png" alt="" />
               <p>
                 <img src="./images/cp.png" alt="" />
-                Copyright 2019
+                Copyright 2023
               </p>
             </div>
           </div>
@@ -197,7 +198,7 @@ class RightBar extends Component {
               <div className="suggestion-usd">
                 <img src="./images/s2.png" alt="" />
                 <div className="sgt-text">
-                  <h4>Saroj Shakya</h4>
+                  <h4>user.fullname</h4>
                   <span>PHP Developer</span>
                 </div>
                 <span>
@@ -237,7 +238,7 @@ class RightBar extends Component {
               <div className="suggestion-usd">
                 <img src="./images/s6.png" alt="" />
                 <div className="sgt-text">
-                  <h4>Saroj Shakya</h4>
+                  <h4>user.fullname</h4>
                   <span>PHP Developer</span>
                 </div>
                 <span>

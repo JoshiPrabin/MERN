@@ -6,24 +6,38 @@ import PostBar from "./PostBar";
 import RightBar from "./RightBar";
 import Spinner from "./Spinner";
 
+const userData = {
+  email: "test@test.com",
+  username: "profile",
+  fullname: "Prabin Joshi",
+  title: "Software Developer",
+  skills: ["JS", "PHP", "JAVA"],
+  address: "Kathmandu, Nepal",
+  job_type: "Full Time",
+  id: 1,
+  is_active: true,
+  followers: ["username123", "user234", "user543"],
+  followings: ["username123", "user234", "user543", "user555"],
+};
+
 class Index extends Component {
   render() {
     return (
       <div className="wrapper">
-        <Header></Header>
+        <Header user={userData}></Header>
         <main>
           <div className="main-section">
             <div className="container">
               <div className="main-section-data">
                 <div className="row">
                   <div className="col-lg-3 col-md-4 pd-left-none no-pd">
-                    <UserSection></UserSection>
+                    <UserSection user={userData}></UserSection>
                   </div>
                   <div className="col-lg-6 col-md-8 no-pd">
                     <div className="main-ws-sec">
                       <PosTop></PosTop>
                       <div className="posts-section">
-                        <PostBar></PostBar>
+                        <PostBar user={userData}></PostBar>
                         <div
                           className="top-profiles"
                           style={{ display: "none" }}
@@ -839,9 +853,7 @@ class Index extends Component {
                             ></span>
                           </div>
                         </div>
-                        <PostBar></PostBar>
                         <div className="posty">
-                          <PostBar></PostBar>
                           <div
                             className="comment-section"
                             style={{ display: "none" }}
