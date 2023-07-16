@@ -52,10 +52,29 @@ const postData = [
 ];
 
 class PostBar extends Component {
+  constructor() {
+    super();
+    this.state = {
+      posts: [],
+    };
+  }
+
+  componentDidMount() {
+    const that = this;
+    fetch("http://localhost:5000/api/v1/posts")
+      .then((resp) => resp.json())
+      .then((data) => {
+        that.setState({ posts: data });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
+
   render() {
     return (
       <div>
-        {postData.map((post, index) => (
+        {this.state.posts.map((post, index) => (
           <div key={index} className="post-bar">
             <div className="post_topbar">
               <div className="usy-dt">
@@ -64,7 +83,8 @@ class PostBar extends Component {
                   alt=""
                 />
                 <div className="usy-name">
-                  <h3>{this.props.user?.fullname}</h3>
+                  {/* <h3>{this.props.user?.fullname}</h3> */}
+                  <h3>{post.post_by_fullname}</h3>
                   <span>3 min ago</span>
                 </div>
               </div>
