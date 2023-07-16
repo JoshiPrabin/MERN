@@ -12,7 +12,7 @@ const postData = [
     viewed_by: ["test111", "test1", "test123"],
     id: 2,
     user_id: 1,
-    post_by_username: "test123",
+    post_by_username: "profile",
     post_by_fullname: "Test User",
     post_date: "2023-06-10T09:24:07.659034",
     comments: [],
@@ -28,7 +28,7 @@ const postData = [
     viewed_by: ["test111", "test1", "test123"],
     id: 3,
     user_id: 2,
-    post_by_username: "test321",
+    post_by_username: "profile",
     post_by_fullname: "Test User2",
     post_date: "2023-06-10T21:51:10.643105",
     comments: [],
@@ -44,7 +44,7 @@ const postData = [
     viewed_by: ["test111", "test1", "test123"],
     id: 4,
     user_id: 3,
-    post_by_username: "test111",
+    post_by_username: "profile",
     post_by_fullname: "Test User2",
     post_date: "2023-06-10T21:53:40.698655",
     comments: [],
@@ -55,11 +55,14 @@ class PostBar extends Component {
   render() {
     return (
       <div>
-        {[1, 2, 3].map((a, b) => (
-          <div key={b} className="post-bar">
+        {postData.map((post, index) => (
+          <div key={index} className="post-bar">
             <div className="post_topbar">
               <div className="usy-dt">
-                <img src="./images/profile.jpg" alt="" />
+                <img
+                  src={"./images/" + post.post_by_username + ".jpg"}
+                  alt=""
+                />
                 <div className="usy-name">
                   <h3>{this.props.user?.fullname}</h3>
                   <span>3 min ago</span>
@@ -106,7 +109,7 @@ class PostBar extends Component {
                 </li>
                 <li>
                   <img src="./images/icon9.png" alt="" />
-                  <span>India</span>
+                  <span>{post.location}</span>
                 </li>
               </ul>
               <ul className="bk-links" style={{ display: "none" }}>
@@ -123,15 +126,15 @@ class PostBar extends Component {
               </ul>
             </div>
             <div className="job_descp">
-              <h3>Senior Wordpress Developer</h3>
+              <h3>{post.title}</h3>
               <ul className="job-dt">
                 <li>
                   <a href="./index.html#" title="">
-                    Full Time
+                    {post.job_type}
                   </a>
                 </li>
                 <li>
-                  <span>$30 / hr</span>
+                  <span>{"$" + post.pay_rate_per_hr_dollar + "/ hr"}</span>
                 </li>
               </ul>
               <p>
@@ -143,31 +146,13 @@ class PostBar extends Component {
                 </a>
               </p>
               <ul className="skill-tags">
-                <li>
-                  <a href="./index.html#" title="">
-                    HTML
-                  </a>
-                </li>
-                <li>
-                  <a href="./index.html#" title="">
-                    PHP
-                  </a>
-                </li>
-                <li>
-                  <a href="./index.html#" title="">
-                    CSS
-                  </a>
-                </li>
-                <li>
-                  <a href="./index.html#" title="">
-                    Javascript
-                  </a>
-                </li>
-                <li>
-                  <a href="./index.html#" title="">
-                    Wordpress
-                  </a>
-                </li>
+                {post.skills.map((skills, idx2) => (
+                  <li key={idx2}>
+                    <a href="./index.html#" title="">
+                      {skills}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
             <div className="job-status-bar">
@@ -177,16 +162,18 @@ class PostBar extends Component {
                     <i className="fas fa-heart"></i> Like
                   </a>
                   <img src="./images/liked-img.png" alt="" />
-                  <span>25</span>
+                  <span>{post.liked_by.length}</span>
                 </li>
                 <li>
                   <a href="./index.html#" className="com">
-                    <i className="fas fa-comment-alt"></i> Comment 15
+                    <i className="fas fa-comment-alt"></i>{" "}
+                    {"Comment" + post.comments.length}
                   </a>
                 </li>
               </ul>
               <a href="./index.html#">
-                <i className="fas fa-eye"></i>Views 50
+                <i className="fas fa-eye"></i>
+                {"Views " + post.viewed_by.length}
               </a>
             </div>
           </div>
