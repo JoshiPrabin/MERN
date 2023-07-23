@@ -27,9 +27,9 @@ class Index extends Component {
   render() {
     const user = { ...this.state.user };
     // const { user } = this.state;
-    // if (!Object.keys(user).length) {
-    //   return <></>;
-    // }
+    if (!Object.keys(user).length) {
+      return <div></div>;
+    }
     return (
       <div className="wrapper">
         <Header user={user}></Header>
