@@ -17,6 +17,8 @@ class Login extends Component {
       return;
     }
 
+    formElem.querySelector("#err").innerHTML = "";
+
     fetch("http://localhost:5000/api/v1/user", {
       method: "POST",
       headers: {
@@ -36,9 +38,49 @@ class Login extends Component {
     })
       .then((resp) => resp.json())
       .then((data) => {
+        formElem.querySelector("#err").innerHTML = data.error;
         console.log("Created new user", data);
       })
       .catch((err) => {
+        formElem.querySelector("#err").innerHTML = err.message;
+        console.error(err);
+      });
+  }
+
+  handleSignInClick(evnt) {
+    const formElem = document.getElementById("login-form");
+
+    // select input fields of signin form and read their values
+    const username = formElem.querySelector("#username").value;
+    const password = formElem.querySelector("#password").value;
+
+    if (!username || !password) {
+      document.querySelector("#err").innerHTML = "Username/Password required";
+      return;
+    }
+    // clear error message if any
+    document.querySelector("#err").innerHTML = "";
+
+    // call Backend API user create API
+    fetch("http://localhost:5000/api/v1/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        username,
+        password,
+      }),
+    })
+      .then((resp) => resp.json())
+      .then((data) => {
+        if (data.error) {
+          formElem.querySelector("#err").innerHTML = data.error;
+        }
+      })
+      .catch((err) => {
+        //  display error
+        formElem.querySelector("#err").innerHTML = err.message;
         console.error(err);
       });
   }
@@ -85,6 +127,7 @@ class Login extends Component {
                       <div className="row">
                         <div className="col-lg-6">
                           <div className="sn-field">
+                            <div id="err"></div>
                             <input
                               type="text"
                               name="username"
@@ -117,7 +160,11 @@ class Login extends Component {
                           </div>
                         </div>
                         <div className="col-lg-12">
-                          <button type="submit" value="submit">
+                          <button
+                            type="button"
+                            value="submit"
+                            onClick={this.handleSignInClick}
+                          >
                             Sign in
                           </button>
                         </div>
@@ -130,6 +177,7 @@ class Login extends Component {
                       <div className="row">
                         <div className="col-lg-6">
                           <div className="sn-field">
+                            <div id="err"></div>
                             <input
                               type="text"
                               name="username"
@@ -255,7 +303,6 @@ class Login extends Component {
                       </div>
                     </form>
                   </div>
-                  <div id="err"></div>
                 </div>
               </div>
             </div>
