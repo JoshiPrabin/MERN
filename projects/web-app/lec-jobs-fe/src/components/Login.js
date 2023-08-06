@@ -1,6 +1,10 @@
 import { Component } from "react";
 
 class Login extends Component {
+  constructor(props) {
+    super(props);
+    this.handleSignInClick = this.handleSignInClick.bind(this);
+  }
   handleSignUpClick(evnt) {
     const formElem = document.getElementById("signup-form");
     const username = formElem.querySelector("#signin-username").value;
@@ -33,12 +37,15 @@ class Login extends Component {
         title,
         skills,
         job_type,
-        skills,
       }),
     })
       .then((resp) => resp.json())
       .then((data) => {
-        formElem.querySelector("#err").innerHTML = data.error;
+        if (data.error) {
+          formElem.querySelector("#err").innerHTML = data.error;
+        } else {
+          formElem.querySelector("#err").innerHTML = "Signup seccessful.";
+        }
         console.log("Created new user", data);
       })
       .catch((err) => {
@@ -76,6 +83,10 @@ class Login extends Component {
       .then((data) => {
         if (data.error) {
           formElem.querySelector("#err").innerHTML = data.error;
+        } else {
+          {
+            this.props.loginUser(data.data);
+          }
         }
       })
       .catch((err) => {

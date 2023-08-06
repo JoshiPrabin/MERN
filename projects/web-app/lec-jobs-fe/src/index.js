@@ -6,12 +6,12 @@ import reportWebVitals from "./reportWebVitals";
 import Index from "./components/Home";
 import Login from "./components/Login";
 
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(<App></App>);
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App></App>);
 
-const home = ReactDOM.createRoot(document.getElementById("home"));
+// const home = ReactDOM.createRoot(document.getElementById("home"));
 // home.render(<Index></Index>);
-home.render(<Login></Login>);
+// home.render(<Login></Login>);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

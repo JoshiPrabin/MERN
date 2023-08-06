@@ -7,39 +7,39 @@ import RightBar from "./RightBar";
 import Spinner from "./Spinner";
 
 class Index extends Component {
-  constructor() {
-    super();
-    this.state = {
-      user: {},
-    };
-  }
-  componentDidMount() {
-    fetch("http://localhost:5000/api/v1/user")
-      .then((resp) => resp.json())
-      .then((data) => {
-        this.setState({ user: data });
-      })
-      .catch((err) => {
-        console.error(err);
-      });
+  // constructor() {
+  //   super();
+  //   this.state = {
+  //     user: {},
+  //   };
+  // }
+  // componentDidMount() {
+  //   fetch("http://localhost:5000/api/v1/user")
+  //     .then((resp) => resp.json())
+  //     .then((data) => {
+  //       this.setState({ user: data });
+  //     })
+  //     .catch((err) => {
+  //       console.error(err);
+  //     });
 
-    fetch("http://localhost:5000/api/v1/user", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((resp) => resp.json())
-      .then((data) => {
-        console.log(data);
-      })
-      .catch((err) => {
-        console.error(err);
-      });
-  }
+  //   fetch("http://localhost:5000/api/v1/user", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //   })
+  //     .then((resp) => resp.json())
+  //     .then((data) => {
+  //       console.log(data);
+  //     })
+  //     .catch((err) => {
+  //       console.error(err);
+  //     });
+  // }
 
   render() {
-    const user = { ...this.state.user };
+    const user = this.props.user;
     // const { user } = this.state;
     if (!Object.keys(user).length) {
       return <div></div>;
