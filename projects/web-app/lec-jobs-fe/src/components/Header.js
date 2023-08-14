@@ -1,6 +1,13 @@
 import { Component } from "react";
 
 class Header extends Component {
+  handleLogout(event) {
+    //remove session
+    event.preventDefault();
+    window.sessionStorage.clear();
+    window.location.reload();
+  }
+
   constructor() {
     super();
     this.state = {
@@ -274,7 +281,7 @@ class Header extends Component {
                   </li>
                 </ul>
                 <h3 className="tc">
-                  <a href="./sign-in.html" title="">
+                  <a href="#" title="" onlick={this.handleLogout}>
                     Logout
                   </a>
                 </h3>
