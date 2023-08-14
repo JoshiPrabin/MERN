@@ -84,9 +84,7 @@ class Login extends Component {
         if (data.error) {
           formElem.querySelector("#err").innerHTML = data.error;
         } else {
-          {
-            this.props.loginUser(data.data);
-          }
+          this.props.loginUser(data.data);
         }
       })
       .catch((err) => {
