@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-class PostTop extends Component {
+class PostTopBar extends Component {
   constructor() {
     super();
     this.handleSumitPost = this.handleSumitPost.bind(this);
@@ -41,7 +41,7 @@ class PostTop extends Component {
       return;
     }
     // call Backend API to create post record
-    fetch("http://localhost:5000/api/v1/post", {
+    fetch("http://localhost:5001/api/v1/post", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -73,10 +73,7 @@ class PostTop extends Component {
       <>
         <div className="post-topbar">
           <div className="user-picy">
-            <img
-              src={"./images/" + this.props.user?.username + ".jpeg"}
-              alt=""
-            />
+            <img src={"./images/" + this.props.user.username + ".png"} alt="" />
           </div>
           <div className="post-st">
             <ul>
@@ -182,4 +179,4 @@ class PostTop extends Component {
   }
 }
 
-export default PostTop;
+export default PostTopBar;

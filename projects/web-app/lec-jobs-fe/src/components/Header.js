@@ -2,32 +2,13 @@ import { Component } from "react";
 
 class Header extends Component {
   handleLogout(event) {
-    //remove session
+    // remove session
     event.preventDefault();
     window.sessionStorage.clear();
     window.location.reload();
   }
 
-  constructor() {
-    super();
-    this.state = {
-      user: [],
-    };
-  }
-
-  componentDidMount() {
-    const that = this;
-    fetch("http://localhost:5000/api/v1/user")
-      .then((resp) => resp.json())
-      .then((data) => {
-        that.setState({ user: data });
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }
   render() {
-    const { loggedUser } = this.state.user;
     return (
       <header>
         <div className="container">
@@ -214,18 +195,15 @@ class Header extends Component {
                 <i className="fa fa-bars"></i>
               </a>
             </div>
-
             <div className="user-account">
               <div className="user-info">
                 <img
-                  src={"./images/" + this.props.user.username + ".jpg"}
+                  src={"./images/" + this.props.user.username + ".png"}
                   alt=""
                 />
                 <a href="./index.html#" title="">
-                  Joshi
-                  {/* {user1.lastname} */}
+                  {this.props.user.fullname.substring(0, 4) + ".."}
                 </a>
-
                 <i className="la la-sort-down"></i>
               </div>
               <div className="user-account-settingss" id="users">
@@ -281,7 +259,7 @@ class Header extends Component {
                   </li>
                 </ul>
                 <h3 className="tc">
-                  <a href="#" title="" onlick={this.handleLogout}>
+                  <a href="#" title="" onClick={this.handleLogout}>
                     Logout
                   </a>
                 </h3>

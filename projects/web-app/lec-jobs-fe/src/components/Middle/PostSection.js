@@ -1,7 +1,7 @@
 import { Component } from "react";
 import Post from "./Post";
 
-class PostBar extends Component {
+class PostSection extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -25,11 +25,11 @@ class PostBar extends Component {
     return (
       <div className="posts-section">
         {this.state.posts.map((post, idx) => (
-          <Post post={post} key={idx} />
+          <Post post={post} user={this.props.user} key={idx} />
         ))}
       </div>
     );
   }
 }
 
-export default PostBar;
+export default PostSection;

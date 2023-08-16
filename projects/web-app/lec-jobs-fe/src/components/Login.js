@@ -1,28 +1,36 @@
 import { Component } from "react";
 
 class Login extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.handleSignInClick = this.handleSignInClick.bind(this);
   }
+
   handleSignUpClick(evnt) {
+    // get SignForm HTML Element from form ID
     const formElem = document.getElementById("signup-form");
+
+    // select input fields of signup form and read their values
     const username = formElem.querySelector("#signin-username").value;
     const email = formElem.querySelector("#email").value;
     const fullname = formElem.querySelector("#fullname").value;
     const address = formElem.querySelector("#address").value;
     const title = formElem.querySelector("#title").value;
     const job_type = formElem.querySelector("#job_type").value;
-    const skills = formElem.querySelector("#skills").value.split(",");
+    const skills = formElem.querySelector("#skills").value.split(","); // change to array
     const password = formElem.querySelector("#signin-password").value;
     const rpassword = formElem.querySelector("#repeat-password").value;
 
+    // if password does not match do nothing
     if (password !== rpassword) {
+      alert("Password does not match");
       return;
     }
 
-    formElem.querySelector("#err").innerHTML = "";
+    // clear error message if any
+    document.querySelector("#err").innerHTML = "";
 
+    // call Backend API to create user
     fetch("http://localhost:5000/api/v1/user", {
       method: "POST",
       headers: {
@@ -30,26 +38,30 @@ class Login extends Component {
       },
       body: JSON.stringify({
         username,
-        fullname,
         email,
         password,
         address,
         title,
         skills,
         job_type,
+        fullname,
       }),
     })
       .then((resp) => resp.json())
       .then((data) => {
         if (data.error) {
-          formElem.querySelector("#err").innerHTML = data.error;
+          document.querySelector("#err").innerHTML = data.error;
         } else {
-          formElem.querySelector("#err").innerHTML = "Signup seccessful.";
+          document.querySelector("#err").innerHTML = "Signup Successfully";
+          // reload page after 1 second
+          setTimeout(() => {
+            window.location.reload();
+          }, 1000);
         }
-        console.log("Created new user", data);
       })
       .catch((err) => {
-        formElem.querySelector("#err").innerHTML = err.message;
+        //  display error
+        document.querySelector("#err").innerHTML = err.message;
         console.error(err);
       });
   }
@@ -82,17 +94,20 @@ class Login extends Component {
       .then((resp) => resp.json())
       .then((data) => {
         if (data.error) {
-          formElem.querySelector("#err").innerHTML = data.error;
+          document.querySelector("#err").innerHTML = data.error;
         } else {
-          this.props.loginUser(data.data);
+          {
+            this.props.loginUser(data.data);
+          }
         }
       })
       .catch((err) => {
         //  display error
-        formElem.querySelector("#err").innerHTML = err.message;
+        document.querySelector("#err").innerHTML = err.message;
         console.error(err);
       });
   }
+
   render() {
     return (
       <div className="sign-in-page" style={{ background: "cornflowerblue" }}>
@@ -136,7 +151,6 @@ class Login extends Component {
                       <div className="row">
                         <div className="col-lg-6">
                           <div className="sn-field">
-                            <div id="err"></div>
                             <input
                               type="text"
                               name="username"
@@ -186,7 +200,6 @@ class Login extends Component {
                       <div className="row">
                         <div className="col-lg-6">
                           <div className="sn-field">
-                            <div id="err"></div>
                             <input
                               type="text"
                               name="username"
@@ -199,7 +212,7 @@ class Login extends Component {
                         <div className="col-lg-6">
                           <div className="sn-field">
                             <input
-                              type="text"
+                              type="email"
                               name="email"
                               id="email"
                               placeholder="Email"
@@ -312,6 +325,7 @@ class Login extends Component {
                       </div>
                     </form>
                   </div>
+                  <div id="err"></div>
                 </div>
               </div>
             </div>
