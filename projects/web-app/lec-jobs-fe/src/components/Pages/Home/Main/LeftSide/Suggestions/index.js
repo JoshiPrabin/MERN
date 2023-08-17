@@ -3,12 +3,9 @@ import { Component } from "react";
 class Suggestions extends Component {
   render() {
     return (
-      <div
-        className="widget suggestions full-width"
-        style={{ display: "none" }}
-      >
+      <div className="suggestions full-width">
         <div className="sd-title">
-          <h3>Most Viewed People</h3>
+          <h3>Suggestions</h3>
           <i className="la la-ellipsis-v"></i>
         </div>
         <div className="suggestions-list">
@@ -25,7 +22,7 @@ class Suggestions extends Component {
           <div className="suggestion-usd">
             <img src="./images/s2.png" alt="" />
             <div className="sgt-text">
-              <h4>user.fullname</h4>
+              <h4>Saroj Shakya</h4>
               <span>PHP Developer</span>
             </div>
             <span>
@@ -65,7 +62,7 @@ class Suggestions extends Component {
           <div className="suggestion-usd">
             <img src="./images/s6.png" alt="" />
             <div className="sgt-text">
-              <h4>user.fullname</h4>
+              <h4>Saroj Shakya</h4>
               <span>PHP Developer</span>
             </div>
             <span>

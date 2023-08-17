@@ -1,7 +1,7 @@
 import { Component } from "react";
 import "./App.css";
-import Index from "./components/Home";
-import Login from "./components/Login";
+import Home from "./components/Pages/Home";
+import Login from "./components/Pages/Login";
 
 class App extends Component {
   constructor() {
@@ -12,6 +12,7 @@ class App extends Component {
     };
     this.loginUser = this.loginUser.bind(this);
   }
+
   loginUser(user) {
     this.setState({ userLoggedIn: true, user: user });
     window.sessionStorage.setItem("loggedInUser", JSON.stringify(user));
@@ -30,7 +31,7 @@ class App extends Component {
     }
 
     if (userLoggedIn) {
-      return <Index user={user} />;
+      return <Home user={user} />;
     } else {
       return <Login loginUser={this.loginUser} />;
     }

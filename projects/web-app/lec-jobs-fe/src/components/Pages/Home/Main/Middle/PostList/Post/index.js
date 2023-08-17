@@ -1,5 +1,5 @@
 import { Component } from "react";
-// import CommentSection from "./CommentSection";
+import CommentSection from "./CommentSection";
 
 class Post extends Component {
   constructor(props) {
@@ -25,7 +25,7 @@ class Post extends Component {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ username: this.props.post.post_by_username }),
+      body: JSON.stringify({ username: this.props.user.username }),
     })
       .then((resp) => resp.json())
       .then((data) => {
@@ -49,7 +49,7 @@ class Post extends Component {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({ username: this.props.post.post_by_username }),
+          body: JSON.stringify({ username: this.props.user.username }),
         }
       )
         .then((resp) => resp.json())
@@ -256,7 +256,7 @@ class Post extends Component {
             </a>
           </div>
         </div>
-        {/* {this.state.showComment ? (
+        {this.state.showComment ? (
           <CommentSection
             comments={comments}
             user={user}
@@ -265,7 +265,7 @@ class Post extends Component {
           />
         ) : (
           ""
-        )} */}
+        )}
       </div>
     );
   }
