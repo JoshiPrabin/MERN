@@ -1,10 +1,9 @@
 import { Component } from "react";
-import Header from "../../Header";
+import Header from "../../../components/Common/Header";
 import ChatBox from "./ChatBox";
 import Main from "./Main";
 
 class Home extends Component {
- 
   render() {
     const user = this.props.user;
     // const user = { ...this.props.user };
