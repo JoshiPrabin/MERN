@@ -1,10 +1,11 @@
 import About from "./About";
+import Links from "./Links";
 
 const RightSide = () => {
   return (
     <div className="col-lg-3 pd-right-none no-pd">
       <div className="right-sidebar">
-        <About></About>
+        <About />
         <div className="widget widget-jobs" style={{ display: "none" }}>
           <div className="sd-title">
             <h3>Top Jobs</h3>
@@ -58,7 +59,7 @@ const RightSide = () => {
             </div>
           </div>
         </div>
-        <RightSide />
+        <Links />
         <div className="widget widget-jobs" style={{ display: "none" }}>
           <div className="sd-title">
             <h3>Most Viewed This Week</h3>

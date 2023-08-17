@@ -1,4 +1,4 @@
-const UserAccount = (props) => {
+const UserAccout = (props) => {
   const handleLogout = (event) => {
     // remove session
     event.preventDefault();
@@ -15,11 +15,12 @@ const UserAccount = (props) => {
       .not(window.$(this).next("#notification"))
       .slideUp();
   };
+
   return (
     <div className="user-account">
       <div className="user-info" onClick={handleToggleUserInfo}>
         <img src={"./images/" + props.user.username + ".png"} alt="" />
-        <a href="./index.html#" title="">
+        <a href=".#" title="">
           {props.user.fullname.substring(0, 4) + ".."}
         </a>
         <i className="la la-sort-down"></i>
@@ -77,7 +78,7 @@ const UserAccount = (props) => {
           </li>
         </ul>
         <h3 className="tc">
-          <a href="./#" title="" onClick={handleLogout}>
+          <a href=".#" title="" onClick={handleLogout}>
             Logout
           </a>
         </h3>
@@ -86,4 +87,4 @@ const UserAccount = (props) => {
   );
 };
 
-export default UserAccount;
+export default UserAccout;

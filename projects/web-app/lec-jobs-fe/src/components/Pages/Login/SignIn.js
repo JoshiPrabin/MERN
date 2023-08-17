@@ -1,5 +1,5 @@
 const SignIn = (props) => {
-  const handleSignInClick = (event) => {
+  const handleSignInClick = (evnt) => {
     const formElem = document.getElementById("login-form");
 
     // select input fields of signin form and read their values
@@ -38,7 +38,6 @@ const SignIn = (props) => {
         console.error(err);
       });
   };
-
   return (
     <div className="sign_in_sec current" id="tab-1">
       <h3>Sign in</h3>

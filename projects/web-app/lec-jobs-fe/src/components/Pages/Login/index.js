@@ -1,6 +1,7 @@
-import CompanyInfo from "./CompanyInfo";
+
 import SignIn from "./SignIn";
 import SignUp from "./SignUp";
+import CompanyInfo from "./CompanyInfo";
 
 const Login = (props) => {
   return (
@@ -9,7 +10,7 @@ const Login = (props) => {
         <div className="signin-pop">
           <div className="row">
             <div className="col-lg-5">
-              <CompanyInfo></CompanyInfo>
+              <CompanyInfo />
             </div>
             <div className="col-lg-7">
               <div className="login-sec">
@@ -25,8 +26,8 @@ const Login = (props) => {
                     </a>
                   </li>
                 </ul>
-                <SignIn loginUser={props.loginUser}></SignIn>
-                <SignUp></SignUp>
+                <SignIn loginUser={props.loginUser} />
+                <SignUp />
                 <div id="err"></div>
               </div>
             </div>

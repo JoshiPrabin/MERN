@@ -1,7 +1,6 @@
-import Footer from "../Main/RightSide/index";
+import RightSide from "./RightSide";
 import Middle from "./Middle";
 import LeftSide from "./LeftSide";
-import RightSide from "../Main/RightSide/index";
 
 const Main = (props) => {
   return (

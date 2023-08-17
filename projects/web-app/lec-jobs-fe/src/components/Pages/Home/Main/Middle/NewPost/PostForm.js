@@ -36,7 +36,7 @@ class PostForm extends Component {
       return;
     }
     // call Backend API to create post record
-    fetch("http://localhost:5001/api/v1/post", {
+    fetch("http://localhost:5000/api/v1/post", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -63,7 +63,7 @@ class PostForm extends Component {
         console.error(err);
       });
   }
-  
+
   render() {
     return (
       <div className="post-popup job_post">

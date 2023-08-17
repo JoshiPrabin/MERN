@@ -11,7 +11,7 @@ const Nav = () => {
           </a>
         </li>
         <li>
-          <a href="./#" title="" className="not-box-openm">
+          <a href="/#" title="" className="not-box-openm">
             <span>
               <img src="./images/icon6.png" alt="" />
             </span>

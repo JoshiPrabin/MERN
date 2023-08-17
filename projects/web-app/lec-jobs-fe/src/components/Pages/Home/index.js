@@ -1,5 +1,5 @@
 import { Component } from "react";
-import Header from "../../../components/Common/Header";
+import Header from "../../Common/Header";
 import ChatBox from "./ChatBox";
 import Main from "./Main";
 

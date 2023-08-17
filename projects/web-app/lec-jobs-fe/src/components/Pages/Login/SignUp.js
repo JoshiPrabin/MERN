@@ -1,64 +1,64 @@
-const handleSignUpClick = (evnt) => {
-  // get SignForm HTML Element from form ID
-  const formElem = document.getElementById("signup-form");
-
-  // select input fields of signup form and read their values
-  const username = formElem.querySelector("#signin-username").value;
-  const email = formElem.querySelector("#email").value;
-  const fullname = formElem.querySelector("#fullname").value;
-  const address = formElem.querySelector("#address").value;
-  const title = formElem.querySelector("#title").value;
-  const job_type = formElem.querySelector("#job_type").value;
-  const skills = formElem.querySelector("#skills").value.split(","); // change to array
-  const password = formElem.querySelector("#signin-password").value;
-  const rpassword = formElem.querySelector("#repeat-password").value;
-
-  // if password does not match do nothing
-  if (password !== rpassword) {
-    alert("Password does not match");
-    return;
-  }
-
-  // clear error message if any
-  document.querySelector("#err").innerHTML = "";
-
-  // call Backend API to create user
-  fetch("http://localhost:5000/api/v1/user", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      username,
-      email,
-      password,
-      address,
-      title,
-      skills,
-      job_type,
-      fullname,
-    }),
-  })
-    .then((resp) => resp.json())
-    .then((data) => {
-      if (data.error) {
-        document.querySelector("#err").innerHTML = data.error;
-      } else {
-        document.querySelector("#err").innerHTML = "Signup Successfully";
-        // reload page after 1 second
-        setTimeout(() => {
-          window.location.reload();
-        }, 1000);
-      }
-    })
-    .catch((err) => {
-      //  display error
-      document.querySelector("#err").innerHTML = err.message;
-      console.error(err);
-    });
-};
-
 const SignUp = () => {
+  const handleSignUpClick = (evnt) => {
+    // get SignForm HTML Element from form ID
+    const formElem = document.getElementById("signup-form");
+
+    // select input fields of signup form and read their values
+    const username = formElem.querySelector("#signin-username").value;
+    const email = formElem.querySelector("#email").value;
+    const fullname = formElem.querySelector("#fullname").value;
+    const address = formElem.querySelector("#address").value;
+    const title = formElem.querySelector("#title").value;
+    const job_type = formElem.querySelector("#job_type").value;
+    const skills = formElem.querySelector("#skills").value.split(","); // change to array
+    const password = formElem.querySelector("#signin-password").value;
+    const rpassword = formElem.querySelector("#repeat-password").value;
+
+    // if password does not match do nothing
+    if (password !== rpassword) {
+      alert("Password does not match");
+      return;
+    }
+
+    // clear error message if any
+    document.querySelector("#err").innerHTML = "";
+
+    // call Backend API to create user
+    fetch("http://localhost:5000/api/v1/user", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        username,
+        email,
+        password,
+        address,
+        title,
+        skills,
+        job_type,
+        fullname,
+      }),
+    })
+      .then((resp) => resp.json())
+      .then((data) => {
+        if (data.error) {
+          document.querySelector("#err").innerHTML = data.error;
+        } else {
+          document.querySelector("#err").innerHTML = "Signup Successfully";
+          // reload page after 1 second
+          setTimeout(() => {
+            window.location.reload();
+          }, 1000);
+        }
+      })
+      .catch((err) => {
+        //  display error
+        document.querySelector("#err").innerHTML = err.message;
+        console.error(err);
+      });
+  };
+
   return (
     <div className="sign_in_sec" id="tab-2">
       <h3>Sign up</h3>
