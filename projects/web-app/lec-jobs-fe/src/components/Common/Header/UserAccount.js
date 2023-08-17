@@ -17,10 +17,10 @@ const UserAccount = (props) => {
   };
   return (
     <div className="user-account">
-      <div className="user-info" onClick={this.handleToggleUserInfo}>
-        <img src={"./images/" + this.props.user.username + ".png"} alt="" />
+      <div className="user-info" onClick={handleToggleUserInfo}>
+        <img src={"./images/" + props.user.username + ".png"} alt="" />
         <a href="./index.html#" title="">
-          {this.props.user.fullname.substring(0, 4) + ".."}
+          {props.user.fullname.substring(0, 4) + ".."}
         </a>
         <i className="la la-sort-down"></i>
       </div>
@@ -77,7 +77,7 @@ const UserAccount = (props) => {
           </li>
         </ul>
         <h3 className="tc">
-          <a href="#" title="" onClick={this.handleLogout}>
+          <a href="./#" title="" onClick={handleLogout}>
             Logout
           </a>
         </h3>

@@ -1,6 +1,7 @@
-import Footer from "../../../Footer";
+import Footer from "../Main/RightSide/index";
 import Middle from "./Middle";
 import LeftSide from "./LeftSide";
+import RightSide from "../Main/RightSide/index";
 
 const Main = (props) => {
   return (
@@ -11,7 +12,7 @@ const Main = (props) => {
             <div className="row">
               <LeftSide user={props.user} />
               <Middle user={props.user} />
-              <Footer />
+              <RightSide />
             </div>
           </div>
         </div>
